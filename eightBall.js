@@ -15,7 +15,7 @@ var server = net.createServer(function(connection){
 			if(recievedData[recievedData.length-1] === "?"){
 				var randomReply = replies[Math.floor(Math.random()*replies.length)]; //grab the random element.
 				connection.write(randomReply.reply); //give to them the random reply.
-				console.log.(recievedData);
+				console.log(recievedData);
 				console.log(randomReply.reply);
 			} //end of if statement
 			else {
